@@ -1,3 +1,6 @@
+// Student name: wsiu11
+// Student ID: 301272297
+// Filename: server.js
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var express = require('./config/express');

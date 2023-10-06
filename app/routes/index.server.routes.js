@@ -1,3 +1,6 @@
+// Student name: wsiu11
+// Student ID: 301272297
+// Filename: index.server.routes.js
 module.exports = function (app) {
     app.get('/', function (req, res) { res.render('index', { title: "Home" }) });
     app.get('/home', function (req, res) { res.render('index', { title: "Home" }) });
