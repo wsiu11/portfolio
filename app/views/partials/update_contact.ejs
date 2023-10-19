@@ -1,0 +1,13 @@
+<!-- Student name: wsiu11 -->
+<!-- Student ID: 301272297 -->
+<!-- Filename: update_contact.ejs -->
+<h1>Update Contact</h1>
+<form action="/contact/update/<%= contacts[0].id %>" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value="<%= contacts[0].name %>" placeholder="<%= contacts[0].name %>"><br>
+  <label for="contact">Contact Number:</label><br>
+  <input type="text" id="contact" name="contact" value="<%= contacts[0].contactNumber %>" placeholder="<%= contacts[0].contactNumber %>"><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" value="<%= contacts[0].email %>" placeholder="<%= contacts[0].email %>"><br><br>
+  <input type="submit" value="Submit">
+</form>

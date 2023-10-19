@@ -1,0 +1,20 @@
+<!-- Student name: wsiu11 -->
+<!-- Student ID: 301272297 -->
+<!-- Filename: secure.ejs -->
+<h1>Contact List</h1>
+
+<ul class="list-group">
+  <% for(var i = 0; i < contacts.length; i++) { %>
+  <li class="list-group-item">
+    <div><%= contacts[i].name %></div>
+    <div><%= contacts[i].contactNumber %></div>
+    <div><%= contacts[i].email %></div>
+    <div class="btn-group mr-2" role="group" aria-label="First group">
+        <a href='/updateContact-<%= contacts[i].id %>'><button type="button" class="btn btn-secondary">Update</button></a>
+        <form action="/contact/delete/<%= contacts[0].id %>" method="post">
+           <button type="submit" class="btn btn-secondary">Delete</button>
+        </form>
+      </div>
+  </li>
+  <% } %>
+</ul>

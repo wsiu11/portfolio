@@ -6,21 +6,27 @@
 <%- include('partials/main_nav.ejs') %>
 
 <main class="container py-4">
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-        <h1>
-            <% if (title=="Home") { %>
-                <%- include('partials/home.ejs') %>
-            <% } else if (title=="About me") { %>
-                <%- include('partials/about.ejs') %>
-            <% } else if (title=="Projects") { %>
-                <%- include('partials/projects.ejs') %>
-            <% } else if (title=="Services") { %>
-                <%- include('partials/services.ejs') %>
-            <% } else if (title=="Contact me") { %>
-                <%- include('partials/contact.ejs') %>
-            <% } %>
-        </h1>
-    </div>
+  <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+    <h1>
+      <% if (title=="Home") { %>
+      <%- include('partials/home.ejs') %>
+      <% } else if (title=="About me") { %>
+      <%- include('partials/about.ejs') %>
+      <% } else if (title=="Projects") { %>
+      <%- include('partials/projects.ejs') %>
+      <% } else if (title=="Services") { %>
+      <%- include('partials/services.ejs') %>
+      <% } else if (title=="Contact me") { %>
+      <%- include('partials/contact.ejs') %>
+      <% } else if (title=="Secure area") { %>
+      <%- include('partials/secure.ejs') %>
+      <% } else if (title=="Login") { %>
+      <%- include('partials/login.ejs') %>
+      <% } else if (title=="Update contact") { %>
+      <%- include('partials/update_contact.ejs') %>
+      <% } %>
+    </h1>
+  </div>
 </main>
 
 
